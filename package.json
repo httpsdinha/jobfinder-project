@@ -4,7 +4,7 @@
   "description": "Este sistema é um portal para programadores encontrarem vagas de trabalho",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "dev",
@@ -14,6 +14,7 @@
   "author": "Amanda Caroline de Gois Balcaçar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "sqlite3": "^5.0.0"
   }
 }
