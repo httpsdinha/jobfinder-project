@@ -1,5 +1,5 @@
 const express       = require('express');
-const exphbs        = require('express-handlebars');
+const { engine } = require('express-handlebars');
 const app           = express();
 const path          = require('path');
 const db            = require('./db/connection');
@@ -16,8 +16,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //handlebars
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', engine({ extname: '.handlebars', defaultLayout: "main"}));
 app.set('view engine', 'handlebars');
+
+//static folder
+app.use(express.static(path.join(__dirname,'public')));
 
 
 // db connection
@@ -32,7 +35,7 @@ db
 
 // Routes
 app.get('/', (req, res) => {
-    res.send("Está funcionando 3");
+    res.render('index');
 });
 
 // jobs routes
