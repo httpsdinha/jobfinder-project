@@ -23,3 +23,5 @@ router.post('/add', (req, res) => {
     .then(() => req.redirect('/'))
     .catch(err => console.log(err));
 });
+
+module.exports = router
