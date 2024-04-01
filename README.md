@@ -1,4 +1,4 @@
-# JobSearch - Site de Busca de Empregos para Desenvolvedores
+# Job Finder - Site de Busca de Empregos para Desenvolvedores
 
 Este é um projeto Node.js que implementa um site de busca de empregos para desenvolvedores. Ele utiliza o framework Express para o backend, o mecanismo de templates Handlebars para a renderização das páginas HTML, e CSS para estilização.
 
@@ -14,7 +14,7 @@ Este é um projeto Node.js que implementa um site de busca de empregos para dese
 
 ## Execução
 
-1. Inicie o aplicativo: <node app.js>
+1. Inicie o aplicativo: node app.js
 
 2. Abra o navegador e acesse [http://localhost:3000](http://localhost:3000) para visualizar o site.
 
